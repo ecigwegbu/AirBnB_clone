@@ -1,3 +1,3 @@
 #### AirBnB_clone
-Web Static
+Web Static Updated
 ***
