@@ -1,14 +1,21 @@
-/* 3-Common.css */
+/* 4-Common.css */
+html {
+  height: 100%;
+}
 body {
+  height: 100%;
   margin: 0px;
   padding: 0px;
   color: #484848;
   font-size: 14px;
-  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-margin-top: 30px;
-margin-bottom: 30px;
-height: fit-content;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 1000px;
+  flex: 1 0 auto;
 }
