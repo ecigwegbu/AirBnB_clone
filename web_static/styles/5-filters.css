@@ -28,7 +28,10 @@
 .amenities {
   width: 25%;
   height: 100%;
-  margin-left: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .locations {
@@ -38,11 +41,11 @@
 .locations h3,
 .amenities h3 {
   font-weight: 600;
-  margin: 14px 0 0;
+  margin: 2px 20px;
 }
 .locations h4,
 .amenities h4 {
-  margin: 2px;
+  margin: 2px 20px;
   font-size: 14px;
   font-weight: 400;
 }

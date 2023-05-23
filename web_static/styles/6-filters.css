@@ -18,6 +18,7 @@
   border-radius: 4px;
   color: white;
   background-color: #ff5a5f;
+  box-sizing: border-box;
 }
 
 .filters button:hover {
@@ -28,7 +29,11 @@
 .amenities {
   width: 25%;
   height: 100%;
-  margin-left: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .locations {
@@ -38,11 +43,51 @@
 .locations h3,
 .amenities h3 {
   font-weight: 600;
-  margin: 14px 0 0;
+  margin: 2px 20px;
 }
+
 .locations h4,
 .amenities h4 {
-  margin: 2px;
+  margin: 2px 20px;
   font-size: 14px;
   font-weight: 400;
+}
+
+div:hover > .popover {
+  display: block;
+  cursor: pointer;
+}
+
+.popover {
+  display: none;
+  width: 100%;
+  border: solid 1px #cccccc;
+  border-radius: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  margin-top: 0px;
+  top: 100%;
+  background-color: #fafafa;
+}
+
+.popover li {
+  margin: 10px 0px 5px 0px;
+  list-style: none;
+}
+
+.popover h2 {
+  font-size: 16px;
+}
+
+.filters .locations ul {
+  padding: 0.5em 0 1em 1em;
+}
+
+.filters .amenities ul {
+  padding: 2em 0 2em 3em;
+}
+
+.filters .locations li {
+  margin: 0 0 0 5%;
+  padding: 0.2em;
 }
